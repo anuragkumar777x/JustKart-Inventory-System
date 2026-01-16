@@ -9,7 +9,8 @@ st.set_page_config(
     layout="wide"
 )
 
-API_URL = "https://justkart-inventory-system.onrender.com" # FastAPI base URL
+import os
+API_URL = os.getenv("API_URL") # FastAPI base URL
 
 def login_user(username, password):
     return requests.post(
