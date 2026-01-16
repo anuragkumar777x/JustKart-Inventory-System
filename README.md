@@ -40,18 +40,21 @@ Each user sees **only their own products**, ensuring proper data isolation and s
 
 ```
 JustKart/
-│
 ├── backend/
 │   ├── main.py
+│   └── requirements.txt
+│
+├── database/
 │   ├── databases.py
 │   ├── databasemodels.py
-│   ├── models_db.py
+│   └── models_db.py
 │   └── requirements.txt
 │
 ├── frontend/
-│   ├── streamlit.py
+│   └── streamlit.py
 │   └── requirements.txt
 │
+├── requirements.txt
 └── README.md
 ```
 
