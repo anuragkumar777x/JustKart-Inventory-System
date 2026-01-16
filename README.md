@@ -138,7 +138,7 @@ This project can be deployed on **Render** using:
 ## 👨‍💻 Author
 
 **Anurag**    
-Aspiring Backend & Full-Stack Developer
+Full-Stack Developer
 
 ---
 
