@@ -1,8 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
-
-from database.databases import session, engine
+from database.databases import SessionLocal, engine
 from database import databasemodels
 from database.models_db import (
     ProductCreate,
@@ -19,7 +18,7 @@ databasemodels.Base.metadata.create_all(bind=engine)
 # ---------------- DB Dependency ----------------
 
 def get_db():
-    db = session()
+    db = SessionLocal()
     try:
         yield db
     finally:
