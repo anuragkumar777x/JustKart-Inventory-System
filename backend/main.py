@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from fastapi import HTTPException
 
-from database.databases import session, engine
-from database import databasemodels
-from database.models_db import (
+from databases import session, engine
+import databasemodels
+from models_db import (
     ProductCreate,
     ProductUpdate,
     UserCreate,
