@@ -1,17 +1,15 @@
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
-from fastapi import HTTPException
 
-from databases import session, engine
-import databasemodels
-from models_db import (
+from database.databases import session, engine
+from database import databasemodels
+from database.models_db import (
     ProductCreate,
     ProductUpdate,
     UserCreate,
     UserLogin,
 )
-
 app = FastAPI(title="JustKart API")
 
 # create tables
