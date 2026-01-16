@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide"
 )
 
-API_URL = "http://127.0.0.1:8000"  # FastAPI base URL
+API_URL = "https://justkart-inventory-system.onrender.com" # FastAPI base URL
 
 def login_user(username, password):
     return requests.post(
