@@ -137,8 +137,7 @@ This project can be deployed on **Render** using:
 
 ## 👨‍💻 Author
 
-**Anurag**  
-B.Tech – Cyber Security  
+**Anurag**    
 Aspiring Backend & Full-Stack Developer
 
 ---
